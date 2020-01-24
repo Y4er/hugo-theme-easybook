@@ -1,7 +1,7 @@
 <div class="wrapper">
     <div id="sidebar-toggle">TOC</div>
     {{/*  首页左上角作者名  */}}
-    <a class="site-title" href="{{ "." | absURL }}">{{ .Params.author }}</a>
+    <a class="site-title" href="{{ "." | absURL }}">{{ .Site.Params.author }}</a>
     {{/*  右上角导航  */}}
     <nav class="site-nav">
         {{ range .Site.Menus.main -}}
